@@ -9,7 +9,7 @@ WORKDIR /app
 COPY . /app
 
 # 安装依赖
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 # 暴露服务端口
 EXPOSE 6688
